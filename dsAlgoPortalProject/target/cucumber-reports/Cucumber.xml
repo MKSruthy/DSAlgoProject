@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="43" time="82.361">
+    <testcase classname="DSAlgo Portal" name="User validate Home page" time="2.67">
+        <system-out>
+            <![CDATA[Given User open Chrome Browser..............................................passed
+And User Open Url "https://dsportalapp.herokuapp.com/"......................passed
+When User clicks on Get Started button......................................passed
+Then The user redirected to home page as the title "NumpyNinja".............passed
+Then The user clicks on data structure dropdown.............................passed
+When The user select one of the dropdown menu...............................passed
+Then It should Alert the user with the message "You are not logged in"......passed
+When The user click any of thr Get started button in home page..............passed
+Then It should Alert the user with the message "You are not logged in"......passed
+When The user click on Register.............................................passed
+Then The user should be redirected to Register page as title "Registration".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="User validate Registeration page" name="User Enter username,password and confirmpassword as Data Driven" time="2.245">
+        <failure message="" type="junit.framework.AssertionFailedError">
+            <![CDATA[Given The user opens Chrome Browser and Enter the Register page url "https://dsportalapp.herokuapp.com/register".passed
+Then The user enter the NumpyNinja ,TestAutomation33 and TestAutomation33...passed
+And click on Register.......................................................passed
+Then It should open home page with an Alert messege "New Account Created."..failed
+And click on signout........................................................skipped
+Then click on signIn........................................................skipped
+And The user should navigate to login page as title "Login".................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at stepDefinition.DsAlgoRegStep.it_should_open_home_page_with_an_alert_messege(DsAlgoRegStep.java:39)
+	at ✽.It should open home page with an Alert messege "New Account Created."(file:///C:/Users/prabi/Documents/SRUTHY/sruthy-eclipse-workspace/dsAlgoPortalProject/src/test/resources/Features/dsAlgoRegister.feature:26)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="User validate Registeration page" name="User Enter username,password and confirmpassword as Data Driven 2" time="2.197">
+        <failure message="" type="junit.framework.AssertionFailedError">
+            <![CDATA[Given The user opens Chrome Browser and Enter the Register page url "https://dsportalapp.herokuapp.com/register".passed
+Then The user enter the sdet831 ,selenium@831 and selenium@831..............passed
+And click on Register.......................................................passed
+Then It should open home page with an Alert messege "New Account Created."..failed
+And click on signout........................................................skipped
+Then click on signIn........................................................skipped
+And The user should navigate to login page as title "Login".................skipped
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at stepDefinition.DsAlgoRegStep.it_should_open_home_page_with_an_alert_messege(DsAlgoRegStep.java:39)
+	at ✽.It should open home page with an Alert messege "New Account Created."(file:///C:/Users/prabi/Documents/SRUTHY/sruthy-eclipse-workspace/dsAlgoPortalProject/src/test/resources/Features/dsAlgoRegister.feature:26)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="DSAlgoSignIn" name="User Validate SignIn page" time="1.598">
+        <failure message="" type="junit.framework.AssertionFailedError">
+            <![CDATA[Given The user opens Chrome Browser and  Enter the LogIn page url "https://dsportalapp.herokuapp.com/login".passed
+When user enter the GeethaandManual.........................................passed
+And click on Login..........................................................passed
+Then It should navigate to the home page with a message " You are logged in  ".failed
+
+StackTrace:
+junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:55)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.Assert.assertTrue(Assert.java:31)
+	at stepDefinition.DsAlgoSignInStep.it_should_navigate_to_the_home_page_with_a_message(DsAlgoSignInStep.java:36)
+	at ✽.It should navigate to the home page with a message " You are logged in  "(file:///C:/Users/prabi/Documents/SRUTHY/sruthy-eclipse-workspace/dsAlgoPortalProject/src/test/resources/Features/dsAlgoSignIn.feature:26)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="DSAlgoSignIn" name="User Validate SignIn page 2" time="0.911">
+        <system-out>
+            <![CDATA[Given The user opens Chrome Browser and  Enter the LogIn page url "https://dsportalapp.herokuapp.com/login".passed
+When user enter the sdet82andselenium82.....................................passed
+And click on Login..........................................................passed
+Then It should navigate to the home page with a message " You are logged in  ".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Array Page" time="4.257">
+        <system-out>
+            <![CDATA[Given The user is in home page with title "NumpyNinja"......................passed
+Then click on Get started button in array...................................passed
+And It should navigate to corresponding page with title "Array".............passed
+When user click on Arrays in Phython........................................passed
+And It should navigate to corresponding page with title "Arrays in Python"..passed
+Then user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then The result should be displayed below the run button....................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Arrays using list page" time="2.168">
+        <system-out>
+            <![CDATA[When User click on Arrays using list........................................passed
+And It should navigate to corresponding page with title "Arrays Using List".passed
+Then user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then The result should be displayed below the run button....................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Basic Operations in list page" time="1.518">
+        <system-out>
+            <![CDATA[When User click on Basic Operations in list.................................passed
+And It should navigate to corresponding page with title "Basic Operations in Lists".passed
+Then user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Applications of Array page" time="1.936">
+        <system-out>
+            <![CDATA[When User click on Applications of Array....................................passed
+And It should navigate to corresponding page with title "Applications of Array".passed
+Then user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+When user click on Practice Questions.......................................passed
+And It should navigate to corresponding page with title "Practice Questions".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Search the array page" time="1.695">
+        <system-out>
+            <![CDATA[When user click on Search the array.........................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user clear the text and enter the Python code print("Search the array").passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Max Consecutive Ones page" time="1.297">
+        <system-out>
+            <![CDATA[When user click on Max Consecutive Ones.....................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user clear the text and enter the Python code print("Max Consecutive Ones").passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Even Number page" time="1.101">
+        <system-out>
+            <![CDATA[When user click on Find Numbers with Even Number of Digits..................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user clear the text and enter the Python code print("Even Number").....passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Array" name="User validate Sorted Array page" time="1.208">
+        <system-out>
+            <![CDATA[When user click on Find Numbers with Squares of  a Sorted Array.............passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user clear the text and enter the Python code print("Sorted Array")....passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="DataStructure Introduction" name="User validate DataStructure Introduction and Time Complexity page" time="2.242">
+        <system-out>
+            <![CDATA[Given The user is in home page as title "NumpyNinja"........................passed
+When user click on Get started button in Data Structure.....................passed
+Then It should navigate to corresponding page with title "Data Structures-Introduction".passed
+When user click on Time Complexity..........................................passed
+Then It should navigate to corresponding page with title "Time Complexity"..passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate LinkList Introduction page" time="2.01">
+        <system-out>
+            <![CDATA[Given The user is in home page with title "NumpyNinja"......................passed
+When user click on Get Started button on Linklist...........................passed
+Then It should navigate to corresponding page with title "Linked List"......passed
+When user click on Introduction.............................................passed
+Then It should navigate to corresponding page with title "Introduction".....passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Creating Linked LIst page" time="1.574">
+        <system-out>
+            <![CDATA[When user click on Creating Linked LIst.....................................passed
+Then It should navigate to corresponding page with title "Creating Linked LIst".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Types of Linked List page" time="1.606">
+        <system-out>
+            <![CDATA[When user click on Types of Linked List.....................................passed
+Then It should navigate to corresponding page with title "Types of Linked List".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Implement Linked List in Python page" time="1.483">
+        <system-out>
+            <![CDATA[When user click on Implement Linked List in Python..........................passed
+Then It should navigate to corresponding page with title "Implement Linked List in Python".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Traversal page" time="1.407">
+        <system-out>
+            <![CDATA[When user click on Traversal................................................passed
+Then It should navigate to corresponding page with title "Traversal"........passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Insertion page" time="1.642">
+        <system-out>
+            <![CDATA[When user click on Insertion................................................passed
+Then It should navigate to corresponding page with title "Insertion"........passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Linklist" name="User validate Deletion page" time="1.638">
+        <system-out>
+            <![CDATA[When user click on Deletion.................................................passed
+Then It should navigate to corresponding page with title "Deletion".........passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validate Implementation of Queue in Python page" time="2.003">
+        <system-out>
+            <![CDATA[Given The user is in home page with title "NumpyNinja"......................passed
+When user click on Get Started button on Queue..............................passed
+And It should navigate to corresponding page with title "Queue".............passed
+When user click on Implementation of Queue in Python........................passed
+And It should navigate to corresponding page with title "Implementation of Queue in Python".passed
+When user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validate Implementation using collections.deque page" time="1.627">
+        <system-out>
+            <![CDATA[When user click on Implementation using collections.deque...................passed
+And It should navigate to corresponding page with title "Implementation using collections.deque".passed
+When user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validate Implementation using array page" time="1.316">
+        <system-out>
+            <![CDATA[When user click on Implementation using array...............................passed
+And It should navigate to corresponding page with title "Implementation using array".passed
+When user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Queue" name="User validate Queue Operations page" time="1.531">
+        <system-out>
+            <![CDATA[When user click on Queue Operations.........................................passed
+And It should navigate to corresponding page with title "Queue Operations"..passed
+When user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stack" name="User validate Stack Main page" time="1.801">
+        <system-out>
+            <![CDATA[Given The user is in home page with title "NumpyNinja"......................passed
+When user click on Get Started button on Stack..............................passed
+Then It should navigate to corresponding page with title "Stack"............passed
+When user click on Operations in Stack......................................passed
+Then It should navigate to corresponding page with title "Operations in Stack".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stack" name="User validate Implementation page" time="1.353">
+        <system-out>
+            <![CDATA[When user click on Implementation...........................................passed
+Then It should navigate to corresponding page with title "Implementation"...passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Stack" name="User validate Applications page" time="2.583">
+        <system-out>
+            <![CDATA[When user click on Applications.............................................passed
+Then It should navigate to corresponding page with title "Applications".....passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Title of your scenario page" time="1.838">
+        <system-out>
+            <![CDATA[Given The user is in home page with title "NumpyNinja"......................passed
+When user click on Get Started button on Tree...............................passed
+And It should navigate to corresponding page with title "Tree"..............passed
+When user click on Overview of Trees........................................passed
+And It should navigate to corresponding page with title "Overview of Trees".passed
+When user click on Try here.................................................passed
+And It should navigate to corresponding page with title "Assessment"........passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Terminologies page" time="1.409">
+        <system-out>
+            <![CDATA[When user click on Terminologies............................................passed
+Then It should navigate to corresponding page with title "Terminologies"....passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Types of Trees page" time="1.489">
+        <system-out>
+            <![CDATA[When user click on Types of Trees...........................................passed
+Then It should navigate to corresponding page with title "Types of Trees"...passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Tree Traversals page" time="1.462">
+        <system-out>
+            <![CDATA[When user click on Tree Traversals..........................................passed
+Then It should navigate to corresponding page with title "Tree Traversals"..passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Traversals-Illustration page" time="1.523">
+        <system-out>
+            <![CDATA[When user click on Traversals-Illustration..................................passed
+Then It should navigate to corresponding page with title "Traversals-Illustration".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Binary Trees page" time="1.562">
+        <system-out>
+            <![CDATA[When user click on Binary Trees.............................................passed
+Then It should navigate to corresponding page with title "Binary Trees".....passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Types of Binary Trees page" time="1.553">
+        <system-out>
+            <![CDATA[When user click on Types of Binary Trees....................................passed
+Then It should navigate to corresponding page with title "Types of Binary Trees".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Implementation in Python page" time="1.693">
+        <system-out>
+            <![CDATA[When user click on Implementation in Python.................................passed
+Then It should navigate to corresponding page with title "Implementation in Python".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Binary Tree Traversals page" time="1.546">
+        <system-out>
+            <![CDATA[When user click on Binary Tree Traversals...................................passed
+Then It should navigate to corresponding page with title "Binary Tree Traversals".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Implementation of Binary Trees page" time="1.67">
+        <system-out>
+            <![CDATA[When user click on Implementation of Binary Trees...........................passed
+Then It should navigate to corresponding page with title "Implementation of Binary Trees".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Applications of Binary trees page" time="1.492">
+        <system-out>
+            <![CDATA[When user click on Applications of Binary trees.............................passed
+Then It should navigate to corresponding page with title "Applications of Binary trees".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Binary Search Trees page" time="2.232">
+        <system-out>
+            <![CDATA[When user click on Binary Search Trees......................................passed
+Then It should navigate to corresponding page with title "Binary Search Trees".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tree" name="User validate Implementation Of BST page" time="1.796">
+        <system-out>
+            <![CDATA[When user click on Implementation Of BST....................................passed
+Then It should navigate to corresponding page with title "Implementation Of BST".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Graph" name="User validate Get Started On Graph page" time="1.805">
+        <system-out>
+            <![CDATA[Given The user is in home page with title "NumpyNinja"......................passed
+When user click on Get Started button on Graph..............................passed
+Then It should navigate to corresponding page with title "Graph"............passed
+When user click on Graph....................................................passed
+Then It should navigate to corresponding page with title "Graph"............passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then User navigate back.....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Graph" name="User validate Graph Representations page" time="2.148">
+        <system-out>
+            <![CDATA[When user click on Graph Representations....................................passed
+Then It should navigate to corresponding page with title "Graph Representations".passed
+When user click on Try here.................................................passed
+Then It should navigate to corresponding page with title "Assessment".......passed
+When user enter the Python code.............................................passed
+And click on run button.....................................................passed
+Then user is navigated to home page "https://dsportalapp.herokuapp.com/home".passed
+Then click on signout.......................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
